@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        form {
+            background-color: #f3f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        
+        button[type="submit"] {
+            background-color: #1c981c;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #qrcodeContainer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        #qrcodeContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        
+        
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
 </head>
 <body>
-    <h1>QR Code Generator</h1>
+    <h2>QR Code Generator</h2>
     <form id="generateForm">
-        <label for="url">Enter URL:</label>
+        <label for="url">Enter information:</label>
         <input type="text" id="url" name="url">
         <button type="submit">Generate QR Code</button>
     </form>

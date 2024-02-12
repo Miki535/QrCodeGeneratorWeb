@@ -18,7 +18,7 @@ func GenerateQRCode(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "POST" {
 		url := r.FormValue("url")
 		if url == "" {
-			http.Error(w, "Please provide a URL", http.StatusBadRequest)
+			http.Error(w, "Please enter information", http.StatusBadRequest)
 			return
 		}
 
